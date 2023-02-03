@@ -21,7 +21,7 @@ TextStyle StyleText(textColor,textSize){
   );
 }
 
-TextStyle Head2Text(textColor){
+TextStyle Head1Text(textColor){
   return TextStyle(
       color: textColor,
       fontSize: 12,

@@ -43,7 +43,7 @@ class _taskScreenState extends State<taskScreen> {
                 FractionallySizedBox(
                   child: Image.asset(
                     'images/bg.png',
-                    height: 450,
+                    height: 386,
                     width: double.infinity,
                     fit: BoxFit.fill,
                   ),
@@ -54,7 +54,7 @@ class _taskScreenState extends State<taskScreen> {
                     children: [
                       Padding(
                         padding: const EdgeInsets.only(
-                          top: 56,
+                          top: 24,
                         ),
                         child: ListTile(
                           contentPadding: EdgeInsets.only(left: 5, ),
@@ -87,10 +87,16 @@ class _taskScreenState extends State<taskScreen> {
                       SizedBox(
                         height: 25,
                       ),
-                      Card(
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(15)),
-                        color: Color.fromRGBO(255, 255, 255, 0.1),
+                      Container(
+                        height: 165,
+                        width: 330,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
+                        //     shape: RoundedRectangleBorder(
+                        // borderRadius: BorderRadius.circular(15)),
+                          color: Color.fromRGBO(255, 255, 255, 0.1),
+                        ),
+
                         child: Padding(
                           padding: const EdgeInsets.only(left: 16.0, top: 16),
                           child: Column(
@@ -218,7 +224,7 @@ class _taskScreenState extends State<taskScreen> {
                       color: Color(0xb2042e2b))),
             ),
             Container(
-              height: 180,
+              height: 230,
               child: ListView(
                 padding: EdgeInsets.only(left: 15,right: 15),
                 children: [
